@@ -1,0 +1,426 @@
+.navbar{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    
+    
+}
+
+.nav li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.nav li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+
+}
+
+
+.nav li:hover, li.active{
+    background-color: rgba(233, 233, 233, 0.3);
+    transition: .4s;
+}
+
+.navbartoggler{
+    padding: auto;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+    .navbar-brand{
+        font-size: 30px;
+        padding-left: 30px;
+
+    }
+    
+}
+
+.nav li a {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        height: 80px;
+    }
+    .navbartoggler{
+        display: inline-flex;
+    }
+    .nav{
+        width: 100%;
+        height: calc(100% -65px);
+        top: -100vh;
+        text-align: center ;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+    }
+    .nav li:hover {
+        background: none;
+
+    }
+
+    .nav li a {
+        font-size: 20px;
+        color: rgb(15, 15, 15);
+        font-weight: bold;
+
+    }
+
+    .nav li a:hover {
+        color: rgb(131, 131, 131);
+
+    }
+    .navbar-brand{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width: 858px) and (orientation: ladscape) {
+    .nav li {
+        margin: 5px 0 0 0;
+    }
+    .nav{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+body {
+	background: rgb(255, 255, 255); 
+    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Bowlby One SC', cursive;
+font-family: 'Playfair Display', serif;
+    margin: 0cm;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 3px;
+}
+
+/* primera gran imagen */
+.cover{
+    height: 450px;
+    background-image: url(images/rsz_ciudad-maderas-mxbm1nrrqti-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    background-color:rgba(0,0,0,0);
+    background-blend-mode: darken;
+}
+
+/* tamaño de las imagenes para que se queden todas iguales */
+.cover-small{
+    height: 0px;
+    background-blend-mode: normal;
+}
+
+/* sombreado de las tarjetas */
+.card .card1{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 50px;
+}
+
+
+/* tamaño de las etiquetas para regular todo en funcion del texto */
+
+.card-title{
+    min-height: 1rem;
+}
+
+.card-text{
+
+    min-height: 2rem;
+}
+
+.product-stripe, .slider{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* que se queden cuadrados todo tipo de casillas durante toda la pagina */
+/* .stripe-container, .slider-container{
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+} */
+
+.stripe-container .card{
+    width: 900px;
+    display: block;
+    margin: auto;
+}
+.stripe-container .card1{
+    width: 900px;
+    display: block;
+    margin: auto;
+}
+.card-body-tabla .card-body1 {
+    padding: 25px;
+}
+
+
+.responsive-iframe{
+    position: relative;
+    padding-top: 56.25%;
+
+}
+.responsive-iframe iframe{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.slider{
+    overflow-x: hidden;
+}
+.card-body-tabla{
+    text-align: center;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.table caption {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+}
+
+.table thead th{ 
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255);
+}
+
+.table tbody tr:hover {
+    background-color: rgba(230, 217, 217, 0.2);
+}
+
+.table tbody td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        border: 0px;
+    }
+    .table caption {
+        font-size: 22px;
+    }
+    .table thead {
+        display: none;
+    }
+    .table tr {
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .table th, .table td {
+        font-size: 12px;
+    }
+    .table td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+    .table  td:last-child {
+        border-bottom: 0px;
+    }
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
+
+/* tipo de letra utilizado */
+body {
+    font-family: 'Bowlby One SC', cursive;
+font-family: 'Playfair Display', serif;
+    margin: 0cm;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 3px;
+}
+
+/* primera gran imagen */
+.cover{
+    height: 400px;
+    background-image: url(images/rsz_ciudad-maderas-mxbm1nrrqti-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    background-color:rgba(0,0,0,0);
+    background-blend-mode: darken;
+}
+
+/* tamaño de las imagenes para que se queden todas iguales */
+.cover-small{
+    height: 0px;
+    background-blend-mode: normal;
+}
+
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+/* tamaño de las etiquetas para regular todo en funcion del texto */
+
+.card-title{
+    min-height: 5rem;
+}
+
+.card-text{
+    min-height: 10rem;
+}
+
+.product-stripe, .slider{
+    overflow-x:scroll ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.stripe-container, .slider-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.stripe-container .card {
+    width: 300px;
+    flex-shrink:0;
+    margin:1rem;
+}
+.stripe-container1{
+    width: 700px;
+    padding: auto;
+}
+
+.responsive-iframe{
+    position: relative;
+    padding-top: 56.25%;
+
+}
+.responsive-iframe iframe{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.slider{
+    overflow-x: hidden;
+}
+
+/* timing para las fotos */
+
+.slider-container{
+    transform: translateX(0%);;
+    animation: slider 10s infinite
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.image-container{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position:center;
+    flex-shrink: 0;
+}
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+        
+    
+}
+
+
+/* .stripe-container.card1{
+    width: 100px;
+    flex-shrink:0;
+    margin:10px;
+    padding: 10px;
+} */
+

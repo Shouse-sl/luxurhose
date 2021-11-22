@@ -1,0 +1,188 @@
+.navbar{
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    
+    
+}
+
+.nav li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.nav li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+
+}
+
+
+.nav li:hover, li.active{
+    background-color: rgba(233, 233, 233, 0.3);
+    transition: .4s;
+}
+
+.navbartoggler{
+    padding: auto;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+    .navbar-brand{
+        font-size: 30px;
+        padding-left: 30px;
+
+    }
+    
+}
+
+.nav li a {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        height: 80px;
+    }
+    .navbartoggler{
+        display: inline-flex;
+    }
+    .nav{
+        width: 100%;
+        height: calc(100% -65px);
+        top: -100vh;
+        text-align: center ;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+
+    }
+    .nav li:hover {
+        background: none;
+
+    }
+
+    .nav li a {
+        font-size: 20px;
+        color: rgb(15, 15, 15);
+        font-weight: bold;
+
+    }
+
+    .nav li a:hover {
+        color: rgb(131, 131, 131);
+
+    }
+    .navbar-brand{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+@media screen and (max-width: 858px) and (orientation: ladscape) {
+    .nav li {
+        margin: 5px 0 0 0;
+    }
+    .nav{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
+
+body {
+	background: rgb(255, 255, 255); 
+    font-family: 'Bowlby One SC', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Bowlby One SC', cursive;
+font-family: 'Playfair Display', serif;
+    margin: 0cm;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 3px;
+}
+
+/* primera gran imagen */
+.cover{
+    height: 450px;
+    background-image: url(images/rsz_ciudad-maderas-mxbm1nrrqti-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    background-color:rgba(0,0,0,0);
+    background-blend-mode: darken;
+}
+
+/* tamaño de las imagenes para que se queden todas iguales */
+.cover-small{
+    height: 0px;
+    background-blend-mode: normal;
+}
+
+/* sombreado de las tarjetas */
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* tamaño de las etiquetas para regular todo en funcion del texto */
+
+.card-title{
+    min-height: 5rem;
+}
+
+.card-text{
+    min-height: 10rem;
+}
+
+.product-stripe, .slider{
+    overflow-x:scroll ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* que se queden cuadrados todo tipo de casillas durante toda la pagina */
+.stripe-container, .slider-container{
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.stripe-container .card{
+    width: 300px;
+    flex-shrink:0;
+    margin:1rem;
+}
+
+
+.responsive-iframe{
+    position: relative;
+    padding-top: 56.25%;
+
+}
+.responsive-iframe iframe{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.slider{
+    overflow-x: hidden;
+}
