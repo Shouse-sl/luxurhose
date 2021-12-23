@@ -417,10 +417,6 @@ h1,h2,h3,h4,h5{
 }
 
 
-/* .stripe-container.card1{
-    width: 100px;
-    flex-shrink:0;
-    margin:10px;
-    padding: 10px;
-} */
-
+.backgrouncolor{
+    background-color: rgba(247, 241, 241, 0.301);
+}
