@@ -129,44 +129,16 @@
                             <h5 class="card-title">Casa moderna perdida en el monte</h5>
                             <p class="card-text">aportación minima de 500$.</p>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                        </div>
-                        <form action="/ckeckout" method="POST">
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-key="pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS"
-                                data-amount="100000" data-name="Shouse" data-description="casa de lujo IBIZA"
-                                data-image="images/3.jpg" data-locale="auto" data-label="COMPRAR">
+                            </div>
+                            <div>
+                                <a class="buy-with-crypto" href="https://commerce.coinbase.com/checkout/3f092573-c04f-473c-be82-968ac374ce3b">
+                                    Buy with Crypto
+                                </a>
+                                <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
                                 </script>
-                        </form>
-                        <script src="https://checkout.stripe.com/checkout.js"></script>
-
-
-                        <script>
-                            var handler = StripeCheckout.configure({
-                                key: 'pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS',
-                                image: 'images/3.jpg',
-                                locale: 'auto',
-                                token: function (token) {
-                                    // You can access the token ID with `token.id`.
-                                    // Get the token ID to your server-side code for use.
-                                }
-                            });
-
-                            document.getElementById('customButton').addEventListener('click', function (e) {
-                                // Open Checkout with further options:
-                                handler.open({
-                                    name: 'Plataforma de ventas',
-                                    description: 'casa de lujo IBIZA',
-                                    amount: 100000
-                                });
-                                e.preventDefault();
-                            });
-
-                            // Close Checkout on page navigation:
-                            window.addEventListener('popstate', function () {
-                                handler.close();
-                            });
-                        </script>
-
+                                <button type="button" class="btn btn-secondary"
+                                    onclick="window.open('https://buy.stripe.com/test_fZe03zdFu28Wa2saEF')">comprar visa</button>
+                            </div>
                     </div>
                 </div>
                 <div class="card">
@@ -176,165 +148,90 @@
                         <!-- casa mas rustica  -->
 
                     </div>
-                    <img src="images/stephen-leonardi-XKIO6ZgCObo-unsplash.jpg" class="card-img-top"
-                        alt="imagen de una casa ">
+                    <img src="images/stephen-leonardi-XKIO6ZgCObo-unsplash.jpg" class="card-img-top" alt="imagen de una casa ">
                     <div>
                         <div class="card-body">
                             <h5 class="card-title">Casa moderna perdida en el monte</h5>
                             <p class="card-text">aportación minima de 500$.</p>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
-                        <form action="/checkout" method="POST">
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-key="pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS"
-                                data-amount="100000" data-name="Shouse" data-description="casa de lujo IBIZA"
-                                data-image="images/3.jpg" data-locale="auto" data-label="COMPRAR">
-                                </script>
-                        </form>
-                        <script src="https://checkout.stripe.com/checkout.js"></script>
-
-
-                        <script>
-                            var handler = StripeCheckout.configure({
-                                key: 'pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS',
-                                image: 'images/3.jpg',
-                                locale: 'auto',
-                                token: function (token) {
-                                    // You can access the token ID with `token.id`.
-                                    // Get the token ID to your server-side code for use.
-                                }
-                            });
-
-                            document.getElementById('customButton').addEventListener('click', function (e) {
-                                // Open Checkout with further options:
-                                handler.open({
-                                    name: 'Plataforma de ventas',
-                                    description: 'casa de lujo IBIZA',
-                                    amount: 100000
-                                });
-                                e.preventDefault();
-                            });
-
-                            // Close Checkout on page navigation:
-                            window.addEventListener('popstate', function () {
-                                handler.close();
-                            });
-                        </script>
+                        <div>
+                            <a class="buy-with-crypto" href="https://commerce.coinbase.com/checkout/3f092573-c04f-473c-be82-968ac374ce3b">
+                                Buy with Crypto
+                            </a>
+                            <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+                            </script>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.open('https://buy.stripe.com/test_fZe03zdFu28Wa2saEF')">comprar visa</button>
+                        </div>
+                    
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div title="vivienda de lujo con gran jardin" class="cover cover-small"
+                            style="background-image: url(rsz_bartlomiej-balicki-7icyxbgi9qk-unsplash.jpg);">
+                    
+                            <!-- casa en el bosque -->
 
                     </div>
-                </div>
-                <div class="card">
-                    <div title="vivienda de lujo con gran jardin" class="cover cover-small"
-                        style="background-image: url(rsz_bartlomiej-balicki-7icyxbgi9qk-unsplash.jpg);">
-
-                        <!-- casa en el bosque -->
-
-                    </div>
-                    <img src="images/r-architecture-2gDwlIim3Uw-unsplash.jpg" class="card-img-top"
-                        alt="imagen de una casa ">
+                    <img src="images/r-architecture-2gDwlIim3Uw-unsplash.jpg" class="card-img-top" alt="imagen de una casa ">
                     <div>
                         <div class="card-body">
                             <h5 class="card-title">Casa moderna perdida en el monte</h5>
                             <p class="card-text">aportación minima de 500$.</p>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
-                        <form action="/checkout" method="POST">
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-key="pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS"
-                                data-amount="100000" data-name="Shouse" data-description="casa de lujo IBIZA"
-                                data-image="images/3.jpg" data-locale="auto" data-label="COMPRAR">
-                                </script>
-                        </form>
-                        <script src="https://checkout.stripe.com/checkout.js"></script>
-
-
-                        <script>
-                            var handler = StripeCheckout.configure({
-                                key: 'pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS',
-                                image: 'images/3.jpg',
-                                locale: 'auto',
-                                token: function (token) {
-                                    // You can access the token ID with `token.id`.
-                                    // Get the token ID to your server-side code for use.
-                                }
-                            });
-
-                            document.getElementById('customButton').addEventListener('click', function (e) {
-                                // Open Checkout with further options:
-                                handler.open({
-                                    name: 'Plataforma de ventas',
-                                    description: 'casa de lujo IBIZA',
-                                    amount: 100000
-                                });
-                                e.preventDefault();
-                            });
-
-                            // Close Checkout on page navigation:
-                            window.addEventListener('popstate', function () {
-                                handler.close();
-                            });
-                        </script>
+                        <div>
+                            <a class="buy-with-crypto" href="https://commerce.coinbase.com/checkout/3f092573-c04f-473c-be82-968ac374ce3b">
+                                Buy with Crypto
+                            </a>
+                            <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+                            </script>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.open('https://buy.stripe.com/test_fZe03zdFu28Wa2saEF')">comprar visa</button>
+                        </div>
+                    
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div title="vivienda de lujo con gran jardin" class="cover cover-small"
+                            style="background-image: url(rsz_bartlomiej-balicki-7icyxbgi9qk-unsplash.jpg);">
+                    
+                            <!-- casa iluminada -->
 
                     </div>
-                </div>
-                <div class="card">
-                    <div title="vivienda de lujo con gran jardin" class="cover cover-small"
-                        style="background-image: url(rsz_bartlomiej-balicki-7icyxbgi9qk-unsplash.jpg);">
-
-                        <!-- casa iluminada -->
-
-                    </div>
-                    <img src="images/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg" class="card-img-top"
-                        alt="imagen de una casa ">
+                    <img src="images/ralph-ravi-kayden-mR1CIDduGLc-unsplash.jpg" class="card-img-top" alt="imagen de una casa ">
                     <div>
                         <div class="card-body">
                             <h5 class="card-title">Casa moderna perdida en el monte</h5>
                             <p class="card-text">aportación minima de 500$.</p>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
-                        <form action="/checkout" method="POST">
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-key="pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS"
-                                data-amount="100000" data-name="Shouse" data-description="casa de lujo IBIZA"
-                                data-image="images/3.jpg" data-locale="auto" data-label="COMPRAR">
-                                </script>
-                        </form>
-                        <script src="https://checkout.stripe.com/checkout.js"></script>
-
-
-                        <script>
-                            var handler = StripeCheckout.configure({
-                                key: 'pk_test_51JKfypJrWJGFvc2o3cyUvJTWWUvL4gyVJnZBD5McABGmLkS1W9sO16mMfHDnunznHG6DEGoNDWw3OZJFWfi5Ygt300y6kKP8OS',
-                                image: 'images/3.jpg',
-                                locale: 'auto',
-                                token: function (token) {
-                                    // You can access the token ID with `token.id`.
-                                    // Get the token ID to your server-side code for use.
-                                }
-                            });
-
-                            document.getElementById('customButton').addEventListener('click', function (e) {
-                                // Open Checkout with further options:
-                                handler.open({
-                                    name: 'Plataforma de ventas',
-                                    description: 'casa de lujo IBIZA',
-                                    amount: 100000
-                                });
-                                e.preventDefault();
-                            });
-
-                            // Close Checkout on page navigation:
-                            window.addEventListener('popstate', function () {
-                                handler.close();
-                            });
-                        </script>
-
+                        <div>
+                            <a class="buy-with-crypto" href="https://commerce.coinbase.com/checkout/3f092573-c04f-473c-be82-968ac374ce3b">
+                                Buy with Crypto
+                            </a>
+                            <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+                            </script>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.open('https://buy.stripe.com/test_fZe03zdFu28Wa2saEF')">comprar visa</button>
+                        </div>
+                        <div>
+  <a class="buy-with-crypto"
+     href="https://commerce.coinbase.com/checkout/8802e6dd-15ac-4e72-bc5f-0b09854d61de">
+    Buy with Crypto
+  </a>
+  <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+  </script>
+</div>
+                        
+                    
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
 
 <section>
     <div class="container mt-5 mb-5 text-center" id="ubicación">
