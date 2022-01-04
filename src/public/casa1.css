@@ -50,7 +50,7 @@ ul.show {
     font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     .navbar{
         height: 80px;
     }
